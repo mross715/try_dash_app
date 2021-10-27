@@ -7,7 +7,7 @@ import pandas as pd
 from dash.dependencies import Input, Output
 
 
-df = pd.read_csv("data/df_eda.csv")
+df = pd.read_csv("df_eda.csv")
 
 cat_cols = df.select_dtypes('object').columns.tolist()
 tier_cols = ['Progress Tier', 'Achievement Tier', 'Climate Tier']
